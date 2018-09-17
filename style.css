@@ -1,9 +1,20 @@
+body {
+   background-image: url("bkg.jpeg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
 .container {
-   width: 960px;
+   width: 50%;
    height: 480px;
    margin: auto;
-   border: 5px solid #c2c0be;
-   background-color: #c2c0be;
+   border: 5px solid rgba(225, 225, 225, 0.2);
+   border-radius: 20px;
+   background-color: rgba(225, 225, 225, 0.5);
+   box-shadow: 2px 2px 5px #006e90,
+      -1px -1px 5px #006e90;
 }
 
 .gridRow {
@@ -16,7 +27,38 @@
    box-sizing: border-box;
    border: 1px solid black;
    background-color: #fff;
-
    display: inline-block;
+}
 
+footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+   color: #11151c;
+}
+
+footer>p {
+   font-size: 1.5em;
+   margin: 0;
+   width: 30%;
+   animation: banner 8s ease-in-out;
+}
+
+footer>p>span {
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+@keyframes banner {
+   0% {
+      margin-left: 105%;
+   }
+
+   100% {
+      margin-left: 0%;
+   }
 }

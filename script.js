@@ -1,10 +1,10 @@
 let container = document.querySelector(".container");
 
-function createGrid(width, height) {
-   for (let row = 0; row < height; row++) {
+function createGrid(width) {
+   for (let row = 0; row < width; row++) {
       const gridRow = document.createElement("div");
       gridRow.classList.add("gridRow");
-      gridRow.style.height = (100 / height) + "%";
+      gridRow.style.height = (100 / width) + "%";
       for (let colomn = 0; colomn < width; colomn++) {
          const grid = document.createElement("div");
          grid.classList.add("grid");
@@ -31,7 +31,6 @@ function reset() {
    children.forEach(child => {
       container.removeChild(child);
    })
-   let askSize = prompt("give a size for the grid", "16x16");
-   let gridSize = askSize.split("x");
-   createGrid(gridSize[0], gridSize[1]);
+   let getGridSize = prompt("give a size for the grid", "16");
+   createGrid(getGridSize);
 }
