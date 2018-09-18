@@ -1,10 +1,22 @@
-let container = document.querySelector(".container");
+/* 
+   Project: Etch-a-Sketch.
+   Developper : Anis Bouhadida.
+   File: script.js
+   Last-update: 18/09/2018.
 
-function getRandomIntInclusive(min, max) {
-   min = Math.ceil(min);
-   max = Math.floor(max);
-   return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+   Summary:
+   ========
+   1/ Create grid.
+   2/ Change color randomly.
+   3/ Reset grid.
+   ========
+*/
+
+/* 
+   1/ Create grid:
+   ===============
+*/
+let container = document.querySelector(".container");
 
 function createGrid(width) {
    for (let row = 0; row < width; row++) {
@@ -22,6 +34,15 @@ function createGrid(width) {
    changeColor();
 }
 
+/* 
+   2/ Change color randomly:
+   =========================
+*/
+function getRandomIntInclusive(min, max) {
+   min = Math.ceil(min);
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function changeColor() {
    let cell = document.querySelectorAll(".grid");
@@ -33,6 +54,10 @@ function changeColor() {
    });
 }
 
+/* 
+   3/ Reset grid:
+   ==============
+*/
 function reset() {
    let children = document.querySelectorAll(".gridRow");
    children.forEach(child => {
