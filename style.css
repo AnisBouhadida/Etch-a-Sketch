@@ -1,91 +1,92 @@
 body {
-   background-image: url("bkg.jpeg");
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   font-family: 'Roboto', sans-serif;
+      background-image: url("bkg.jpeg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
 }
 
 header {
-   text-align: center;
+      text-align: center;
 }
 
 button {
-   padding: 10px;
-   background-color: #006e90;
-   border-top-right-radius: 20px;
-   border-bottom-left-radius: 20px;
-   border: 0;
-   float: left;
+      width: 20%;
+      padding: 10px;
+      background-color: #006e90;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border: 0;
+      float: left;
 
 }
 
 button:hover {
-   background-color: darkslategrey;
+      background-color: darkslategrey;
 }
 
 .container {
-   width: 50%;
-   height: 480px;
-   margin: auto;
+      width: 50%;
+      height: 480px;
+      margin: auto;
 
-   border: 5px solid rgba(225, 225, 225, 0.2);
-   border-radius: 20px;
-   background-color: rgba(225, 225, 225, 0.5);
-   box-shadow: 2px 2px 5px #006e90,
-      -1px -1px 5px #006e90;
+      border: 5px solid rgba(225, 225, 225, 0.2);
+      border-radius: 20px;
+      background-color: rgba(225, 225, 225, 0.5);
+      box-shadow: 2px 2px 5px #006e90,
+            -1px -1px 5px #006e90;
 }
 
 .gridRow {
-   width: 90%;
-   margin: auto;
+      width: 90%;
+      margin: auto;
 }
 
 .grid {
-   height: 100%;
-   box-sizing: border-box;
-   border: 1px solid black;
-   background-color: #fff;
-   display: inline-block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid black;
+      background-color: #fff;
+      display: inline-block;
 }
 
 footer {
-   position: fixed;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   margin: 0;
-   padding: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
 
-   color: #11151c;
+      color: #11151c;
 }
 
 footer>p {
-   font-size: 1.5em;
-   margin: 0;
-   width: 30%;
-   animation: banner 8s ease-in-out;
+      font-size: 1.5em;
+      margin: 0;
+      width: 30%;
+      animation: banner 8s ease-in-out;
 }
 
 footer>p>span {
-   font-size: 1.5em;
-   font-weight: bold;
+      font-size: 1.5em;
+      font-weight: bold;
 }
 
 footer>p>a {
-   text-decoration: none;
+      text-decoration: none;
 }
 
 footer>p>a:visited {
-   color: #11151c;
+      color: #11151c;
 }
 
 @keyframes banner {
-   0% {
-      margin-left: 100%;
-   }
+      0% {
+            margin-left: 100%;
+      }
 
-   100% {
-      margin-left: 0%;
-   }
+      100% {
+            margin-left: 0%;
+      }
 }

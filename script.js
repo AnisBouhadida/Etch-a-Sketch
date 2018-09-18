@@ -1,5 +1,11 @@
 let container = document.querySelector(".container");
 
+function getRandomIntInclusive(min, max) {
+   min = Math.ceil(min);
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function createGrid(width) {
    for (let row = 0; row < width; row++) {
       const gridRow = document.createElement("div");
@@ -20,8 +26,9 @@ function createGrid(width) {
 function changeColor() {
    let cell = document.querySelectorAll(".grid");
    cell.forEach(cel => {
-      cel.addEventListener("mouseover", (e) => {
-         e.target.style.backgroundColor = "#" + e.screenX + e.screenY;
+      cel.addEventListener("mouseenter", (e) => {
+         e.target.style.backgroundColor = "rgb(" + getRandomIntInclusive(0, 225) + "," + getRandomIntInclusive(0, 225) + "," + getRandomIntInclusive(0, 225) + ")";
+
       })
    });
 }
